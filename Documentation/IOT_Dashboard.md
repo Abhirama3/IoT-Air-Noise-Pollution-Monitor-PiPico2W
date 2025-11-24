@@ -1,5 +1,5 @@
-# ThingSpeak Dashboard for Air & Noise Monitoring System  
-## IoT Dashboard Analytics
+# IoT Dashboard Analytics
+## ThingSpeak Dashboard for Air & Noise Monitoring System  
 
 The project uses **ThingSpeak** as the IoT platform to visualize real-time temperature, humidity, air quality, and noise levels remotely.
 
