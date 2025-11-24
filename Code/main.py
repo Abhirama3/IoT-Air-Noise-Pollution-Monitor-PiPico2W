@@ -10,10 +10,10 @@ import dht
 # ------------------------------------------------------------
 # WiFi + ThingSpeak DETAILS INITIALIZATION
 # ------------------------------------------------------------
-WIFI_SSID = "vivo 1816"
-WIFI_PASS = "a4379b58fd9c"
+WIFI_SSID = "ssid"
+WIFI_PASS = "password"
 
-THINGSPEAK_API_KEY = "GFU9RWTE7F1QF5C4"
+THINGSPEAK_API_KEY = "apikey"
 THINGSPEAK_URL = "https://api.thingspeak.com/update"
 
 # ------------------------------------------------------------
