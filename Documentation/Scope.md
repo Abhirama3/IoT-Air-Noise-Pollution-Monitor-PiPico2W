@@ -16,7 +16,7 @@ The scope of this project includes the design, development, and deployment of an
 2. **Live OLED Display**  
    Instant on-device visualization using a 128×64 SSD1306 OLED module.
 
-3. **WiFi Connectivity (Pico W)**  
+3. **WiFi Connectivity (Pico 2W)**  
    Data transmission using the built-in network interface of Raspberry Pi Pico W.
 
 4. **Cloud Integration via ThingSpeak**  
