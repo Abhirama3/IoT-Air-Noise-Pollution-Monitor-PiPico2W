@@ -84,3 +84,4 @@ Used for:
 ## Summary  
 With Pico 2W, DHT22, MQ135, MAX4466, OLED, and a buzzer, the system provides a simple but effective solution for monitoring **air quality**, **temperature**, **humidity**, and **noise pollution**, with both **local alerts** and **internet cloud logging**.
 
+---
