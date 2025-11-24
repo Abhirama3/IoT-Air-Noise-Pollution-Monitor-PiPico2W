@@ -1,5 +1,5 @@
- # IoT Air & Noise Pollution Monitoring System  
- ## Components Required 
+ # Components Used
+ ## IoT Air & Noise Pollution Monitoring System  
 
 This project uses low-cost sensors with the latest Raspberry Pi Pico 2W, which includes WiFi and a faster RP2350 chip.
 
