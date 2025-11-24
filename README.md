@@ -1,29 +1,93 @@
-# Real-time air and noise pollution monitoring using Raspberry Pi Pico 2W and IoT
+# IoT Air & Noise Pollution Monitoring using Raspberry Pi Pico W
 
-Environmental monitoring requires the simultaneous collection and network transmission of diverse data streams from heterogeneous sources (air quality, sound, temperature/humidity).
+A complete IoT-based environmental monitoring system that measures **Temperature**, **Humidity**, **Air Quality**, and **Noise Levels**, displays them on an **SSD1306 OLED**, and uploads live readings to **ThingSpeak** using the **Raspberry Pi Pico W**.
+
+---
+
+## Project Overview
+
+This project monitors:
+
+-  Temperature & Humidity using DHT22
+-  Air Quality using MQ135
+-  Noise Level using MAX4466
+-  Local Display using SSD1306 OLED-SPI
+-  IoT Logging using ThingSpeak
+-  Alerts using Passive Buzzer
+
+The system provides real-time environmental monitoring, both locally and remotely.
+
+---
+
+## Features
+
+- Real-time monitoring of temperature, humidity, noise, and gas concentration  
+- Clear live display on 128x64 SSD1306 OLED  
+- WiFi-enabled data upload to ThingSpeak (cloud dashboard)  
+- Passive buzzer alerts for dangerous levels  
+- Compact, fast, and low-power  
+- Easy to expand or modify  
+
+---
+
+## Hardware Components
+
+| Component | Description |
+|----------|-------------|
+| Raspberry Pi Pico W | WiFi-enabled microcontroller |
+| DHT22 Sensor | Temperature & humidity sensor |
+| MQ135 | Air quality sensor |
+| MAX4466 | Sound sensor with adjustable gain |
+| SSD1306 OLED (SPI) | 128×64 display |
+| Passive Buzzer | Audio alerts |
+| Jumper Wires | Connections |
+| Breadboard | Prototyping |
+
+---
+
+## Software Requirements
+
+- MicroPython
+- Thonny IDE (recommended)  
+- ThingSpeak IoT account
+
+---
+
+## How It Works
+
+1. Sensors continuously collect environmental data  
+2. Pico W processes values & displays them on OLED  
+3. Data is uploaded to ThingSpeak via WiFi  
+4. ThingSpeak graphs allow remote monitoring  
+5. Buzzer alerts activate when values exceed thresholds  
+
+---
+
+## Example Applications
+
+- Indoor air-quality monitoring  
+- Classroom/laboratory safety  
+- Noise pollution tracking  
+- Smart-home environmental analysis  
+- IoT learning projects  
+
+---
+
+## Conclusion
+
+This project demonstrates a fully functional **IoT environmental monitoring system** using Raspberry Pi Pico W.  
+It effectively combines **sensing**, **local display**, **wireless connectivity**, and **cloud analytics**, making it ideal for academic submissions and practical deployments.
+
+---
+
+## Author / Developer
+
+ **Abhirama** 
+ 
+ **Akshay Ballal**
+ 
+ **Adarsha G Acharya**
+ 
+Electronics and Communication Engineering Students at NMAMIT, Nitte  
 
 
-## The core technical challenges addressed by this project are:
-
-- <a> Heterogeneous Data Integration: </a> Successfully interfacing the Raspberry Pi Pico W with Analog (MQ-135, MAX4466) and Digital (DHT22) sensors, and implementing the necessary MicroPython drivers and ADC sampling routines to efficiently acquire, normalize, and condition multiple, disparate data signals.
-
-- <a> Real-Time Data Telemetry and Cloud Integration: </a> Establishing a stable Wi-Fi link and executing a periodic HTTP GET request (ThingSpeak API) to securely transmit time-series data, demonstrating a functional Machine-to-Cloud telemetry channel under resource constraints.
-
-- <a> Local Edge Processing and HMI: </a> Implementing on-device signal processing (specifically RMS to dB conversion for noise) and integrating a Local HMI (OLED) to provide continuous, real-time data visualization and a PWM-driven alarm system for immediate actionable alerts.
-
-
-## Goal:
-To engineer a robust, self-contained, and network-enabled Data Acquisition System (DAS) that leverages the Pico W's capabilities for continuous environmental parameter measurement, signal processing, and integrated cloud telemetry, serving as a functional prototype for distributed sensor networks.
-
-
-## Scope of the solution
-
-The scope of this solution defines the precise technical boundaries and verifiable deliverables of the system demonstrated by the provided code:
-
-|Component|Technical Delivarable|Engineering focus|
-|---------|---------------------|-----------------|
-|Data Acquisition|Integration of DHT22 (Temperature/Humidity), MQ-135 (Gas), and MAX4466 (Sound) sensors via GPIO and ADC peripherals of the Raspberry Pi Pico|Multi-sensor hardware interfacing and data polling|
-|Signal Processing|Implementation of RMS algorithm to convert raw sound ADC values into the dB scale, and application of boundary clipping (MIN_DB, MAX_DB) to ensure stable output|Real-time signal conditioning and environmental metrics calculation|
-|Telemetry & Cloud|Successful Wi-Fi connection management and periodic (15-second interval) publishing of all four sensor readings (Temp, Hum, Sound dB, Gas Raw) to a ThingSpeak channel using formatted HTTP GET requests|Network protocol handling and I/O rate management|
-|Local HMI & Alerting|Implementation of an SSD1306 OLED display driven by SPI to locally display all current readings and network status. A PWM-driven buzzer provides discrete audio alerts for critical thresholds|Edge device output, user interaction, and state signaling|
-|Firmware|The entire system is implemented in MicroPython, demonstrating efficient memory management and synchronous loop execution to balance data acquisition, display update, and network transmission tasks|Embedded software development and resource optimization|
