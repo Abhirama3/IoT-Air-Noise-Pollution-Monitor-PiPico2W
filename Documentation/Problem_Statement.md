@@ -17,7 +17,7 @@ This project aims to develop an **IoT Air & Noise Pollution Monitoring System** 
 The system focuses on:
 
 - **Accurate measurements** using affordable sensors  
-- **Wireless connectivity** via Pico W  
+- **Wireless connectivity** via Pico 2W  
 - **Local + remote visualization** (OLED + ThingSpeak)  
 - **Cost-effectiveness and ease of deployment**  
 - **Scalability for indoor or outdoor use**  
