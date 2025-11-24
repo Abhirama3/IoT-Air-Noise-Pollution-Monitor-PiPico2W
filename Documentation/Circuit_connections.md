@@ -1,4 +1,5 @@
-## Project schematic - IoT Air & Noise Pollution Monitoring System
+# Project schematic 
+## IoT Air & Noise Pollution Monitoring System
 
 Below is the wiring diagram and connection table for the project.  
 
