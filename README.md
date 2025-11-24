@@ -1,6 +1,6 @@
 # IoT Air & Noise Pollution Monitoring using Raspberry Pi Pico W
 
-A complete IoT-based environmental monitoring system that measures **Temperature**, **Humidity**, **Air Quality**, and **Noise Levels**, displays them on an **SSD1306 OLED**, and uploads live readings to **ThingSpeak** using the **Raspberry Pi Pico W**.
+A complete IoT-based environmental monitoring system that measures **Temperature**, **Humidity**, **Air Quality**, and **Noise Levels**, displays them on an **SSD1306 OLED**, and uploads live readings to **ThingSpeak** using the **Raspberry Pi Pico 2W**.
 
 ---
 
@@ -34,7 +34,7 @@ The system provides real-time environmental monitoring, both locally and remotel
 
 | Component | Description |
 |----------|-------------|
-| Raspberry Pi Pico W | WiFi-enabled microcontroller |
+| Raspberry Pi Pico 2W | WiFi-enabled microcontroller |
 | DHT22 Sensor | Temperature & humidity sensor |
 | MQ135 | Air quality sensor |
 | MAX4466 | Sound sensor with adjustable gain |
@@ -75,7 +75,7 @@ The system provides real-time environmental monitoring, both locally and remotel
 
 ## Conclusion
 
-This project demonstrates a fully functional **IoT environmental monitoring system** using Raspberry Pi Pico W.  
+This project demonstrates a fully functional **IoT environmental monitoring system** using Raspberry Pi Pico 2W.  
 It effectively combines **sensing**, **local display**, **wireless connectivity**, and **cloud analytics**, making it ideal for academic submissions and practical deployments.
 
 ---
