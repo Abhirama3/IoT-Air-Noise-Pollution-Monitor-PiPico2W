@@ -1,5 +1,5 @@
-# IoT Air & Noise Pollution Monitoring System  
-## Code_Logic (MicroPython)
+# Code_Logic (MicroPython)
+## IoT Air & Noise Pollution Monitoring System  
 
 This document briefly explains how the program works.  
 It summarizes the sensor logic, display logic, alert logic, and IoT upload steps.
