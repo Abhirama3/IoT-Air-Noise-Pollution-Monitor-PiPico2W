@@ -84,10 +84,3 @@ It effectively combines **sensing**, **local display**, **wireless connectivity*
 
  **Abhirama** 
  
- **Akshay Ballal**
- 
- **Adarsha G Acharya**
- 
-Electronics and Communication Engineering Students at NMAMIT, Nitte  
-
-
